@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html class="no-js">
   <head>
     <meta charset="utf-8">
@@ -9,41 +9,42 @@
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-    <link rel="stylesheet" href="/css/main.19ad.css">
+    <!-- build:css(app) /css/main.css -->
+    <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild -->
 
-    <script src="/js/head-scripts.32fa.js"></script>
+    <!-- build:js(app) /js/head-scripts.js -->
+    <!-- Replace with a custom modernizer build for production -->
+    <script src="/_bower_components/modernizr/modernizr.js"></script>
+    <script src="//use.typekit.net/msy8qqc.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>    
+    <!-- endbuild -->
 
   </head>
   <body>
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="container-fluid">    
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="navbar-header">
-                <a href="/" class="navbar-brand">
-                    <img src="/img/voy_logo_gray.dd75.svg" class="img-reponsive" width="100">
-                </a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-
-
-<!-- 
-      <div class="row">
-        <div class="col-sm-2">
-          <a href="/"><img src="/img/voy_logo_gray.dd75.svg" class="img-reponsive" width="100"></a>
+    
+        <header class="header-light">
+        <div class="container-fluid">            
+            <nav class="navbar navbar-light navbar-static-top">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">
+                        <img src="/img/voy_logo_gray.svg" class="img-reponsive" width="100">
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/#projects">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="col-sm-10">
-            <a href="/blog" class="pull-right">Blog</a>
-            <a href="/about" class="pull-right">About</a>
-        </div>
-      </div>
- -->          <div class="row row-intro">
+    </header>    
+
+	      <div class="row row-intro">
         <div class="col-sm-8 col-sm-offset-2">
           <h2>Immaterials - RFID</h2>
           <p class="lead last">
@@ -88,10 +89,38 @@
 
 
 
-
+    
+        <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-1">
+                    <h4>Contact</h4>
+                </div>
+                <div class="col-sm-3">
+                    <address>
+                        <strong>Voy AS</strong><br>
+                        <a href="https://www.google.no/maps/place/Thorvald+Meyers+gate+49,+0555+Oslo/@59.9239878,10.7590317,17z/data=!3m1!4b1!4m2!3m1!1s0x46416e6896b29c33:0x9e7e7ac41ed4f8ba!6m1!1e1?hl=en" target="blank">Thorvald Meyers gate 79</a><br>
+                        0555 Oslo <br>
+                        NORWAY <br>
+                        Orgnr. 914 322 812
+                    </address>
+                </div>
+                <div class="col-sm-3">
+                    <address>
+                        <a href="mailto:hello@voyoslo.com">hello@voyoslo.com</a><br>
+                        +47 97 66 94 44 
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 <script>window.jQuery || document.write('<script src="/_bower_components/jquery/jquery.min.js"><\/script>')</script>
-<script src="/js/script.224f.js"></script>
+<!-- build:js(app) /js/script.js -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script>
+<!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
@@ -103,8 +132,5 @@
   ga('create','UA-XXXXX-X');ga('send','pageview');
 </script>
 
-    </div>
   </body>
 </html>
-
-
